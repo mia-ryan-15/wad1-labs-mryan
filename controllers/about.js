@@ -8,10 +8,10 @@ const about = {
         
         const viewData = {
             title: "This is the about page!",
-            info: employee.getEmployeeInfo()
+            employee: employee.getEmployeeInfo()
         };
 
-        response.render('start', viewData);
+        response.render('about', viewData);
     },
 };
 

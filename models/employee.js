@@ -4,12 +4,11 @@ import logger from '../utils/logger.js';
 import JsonStore from './json-store.js';
 
 const employee = {
-    employee: new JsonStore('./models/employee.json', {info: {}}),
-    collection: 'info',
-    array: 'employee',
-
+    store: new JsonStore('./models/employee.json', {employee: {}}),
+    collection: 'employee',
+    
     getEmployeeInfo(){
-        return this.employee.findAll(this.collection);
+        return this.store.findAll(this.collection);
     }
 }
 
