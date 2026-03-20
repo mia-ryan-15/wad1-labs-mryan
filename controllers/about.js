@@ -1,6 +1,6 @@
 'use strict';
 import logger from "../utils/logger.js";
-import employee from '../models/employee.js';
+import employees from '../models/employee.js';
 
 const about = {
     createView(request, response) {
@@ -8,7 +8,7 @@ const about = {
         
         const viewData = {
             title: "This is the about page!",
-            employee: employee.getEmployeeInfo()
+            employees: employees.getEmployeesInfo()
         };
 
         response.render('about', viewData);

@@ -3,13 +3,14 @@
 import logger from '../utils/logger.js';
 import JsonStore from './json-store.js';
 
-const employee = {
+const employees = {
     store: new JsonStore('./models/employee.json', {employee: {}}),
-    collection: 'employee',
+    collection: 'employees',
+    array:"employees",
     
-    getEmployeeInfo(){
+    getEmployeesInfo(){
         return this.store.findAll(this.collection);
     }
 }
 
-export default employee;
+export default employees;
