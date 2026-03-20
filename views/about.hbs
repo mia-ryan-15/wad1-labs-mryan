@@ -1,10 +1,11 @@
 {{> menu id="about"}}
 
 <section class=" ui centered aligned middle aligned segment">
- 
+  <div class="ui centered cards">
+ {{#each employees}}
     <div class="ui centered card">
 
-      {{#each employees}}
+      
 
       
   <div class="image">
@@ -27,11 +28,12 @@
        {{mates}} contacts
     </a>
   </div>
+
 </div>
 
 {{/each}}
 
-
+</div>
 
 </section>
 
