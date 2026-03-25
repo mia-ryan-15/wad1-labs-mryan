@@ -19,9 +19,12 @@ const dashboard = {
         response.render('dashboard', viewData);
     },
     addPlaylist(request, response){
+        const timestamp = new Date();
+
         const newPlaylist = {
             id: uuidv4(),
             title: request.body.title,
+            date: timestamp,
             songs: [],
         };
         playlistStore.addPlaylist(newPlaylist);
@@ -34,6 +37,11 @@ const dashboard = {
         playlistStore.removePlaylist(playlistId);
         response.redirect("/dashboard");
     },
+    newRating(request, response){
+        const rating = request.params.rating;
+        playlistStore.addRating(rating);
+        response.redirect("/dashboard");
+    }
 }
 
 export default dashboard;
