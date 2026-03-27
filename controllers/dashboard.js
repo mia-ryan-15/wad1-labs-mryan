@@ -26,6 +26,7 @@ const dashboard = {
             title: request.body.title,
             date: timestamp,
             songs: [],
+            rating: request.body.rating
         };
         playlistStore.addPlaylist(newPlaylist);
         response.redirect('/dashboard');
@@ -35,11 +36,6 @@ const dashboard = {
         const playlistId = request.params.id;
         logger.debug(`Deleting Playlist ${playlistId}`);
         playlistStore.removePlaylist(playlistId);
-        response.redirect("/dashboard");
-    },
-    newRating(request, response){
-        const rating = request.params.rating;
-        playlistStore.addRating(rating);
         response.redirect("/dashboard");
     }
 }
