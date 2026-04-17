@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "firstName": "homer",
+      "lastName": "simpson",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
+    },
+    {
+      "firstName": "marge",
+      "lastName": "simpson",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
+    },
+    {
+      "firstName": "paris",
+      "lastName": "thecat",
+      "email": "paris@cat.com",
+      "password": "catlover",
+      "id": "8a49fab9-c519-4a71-8067-ede3277b31f1"
+    },
+    {
+      "firstName": "mia",
+      "lastName": "white",
+      "email": "mia222@gmail.com",
+      "password": "catsanddosg",
+      "id": "dbc61f74-39f5-44c9-a4df-a349cb4f8eb6"
+    }
+  ]
+}

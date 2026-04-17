@@ -1,68 +1,35 @@
 {
   "playlistCollection": [
     {
-      "id": "01",
-      "title": "Beethoven Sonatas",
-      "rating": 3,
-      "songs": [
-        {
-          "id": "04",
-          "title": "Piano Sonata No. 2",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "05",
-          "title": "Piano Sonata No. 3",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "06",
-          "title": "Piano Sonata No. 6",
-          "artist": "Beethoven"
-        }
-      ]
-    },
-    {
-      "id": "02",
-      "title": "Beethoven Concertos",
-      "rating": 4,
-      "songs": [
-        {
-          "id": "07",
-          "title": "Piano Concerto No. 0",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "08",
-          "title": "Piano Concerto No. 4",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "09",
-          "title": "Piano Concerto No. 6",
-          "artist": "Beethoven"
-        }
-      ]
-    },
-    {
-      "id": "03",
-      "title": "Beethoven Unfinished Symphonies",
-      "rating": 2,
-      "songs": []
-    },
-    {
-      "id": "feefa04a-d5df-435c-a933-7451992bf10c",
-      "title": "New symphonies",
-      "rating": 1,
-      "date": "2026-03-25T17:15:31.301Z",
-      "songs": []
-    },
-    {
-      "id": "062d1399-a014-4041-9b7a-581e8599814c",
-      "title": "dwedwq",
-      "date": "2026-03-27T13:25:21.908Z",
+      "id": "1977a0f3-f028-4003-9e20-73735ba1ca11",
+      "title": "homers new playlist",
+      "date": "2026-04-17T13:34:08.903Z",
       "songs": [],
       "rating": "4"
+    },
+    {
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "id": "a5e095a2-0330-4657-9f8d-1e1e74ceb5ce",
+      "title": "fdfds",
+      "date": "2026-04-17T13:40:59.145Z",
+      "songs": [],
+      "rating": "3"
+    },
+    {
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "id": "2316b43a-4607-4a41-b542-19803a5146b8",
+      "title": "sdsa",
+      "date": "2026-04-17T13:43:13.310Z",
+      "songs": [],
+      "rating": "3"
+    },
+    {
+      "userid": "8a49fab9-c519-4a71-8067-ede3277b31f1",
+      "id": "122fc444-8c27-4452-bcfa-8c546e8d9c18",
+      "title": "cat music",
+      "date": "2026-04-17T13:49:05.535Z",
+      "songs": [],
+      "rating": "5"
     }
   ]
 }

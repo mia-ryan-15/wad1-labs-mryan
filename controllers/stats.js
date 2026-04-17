@@ -2,10 +2,14 @@
 
 import logger from "../utils/logger.js";
 import playlistStore from "../models/playlist-store.js";
+import accounts from './accounts.js';
 
 const stats = {
     createView(request, response){
-        logger.info("Stats page loading!");
+        const loggedInUser = accounts.getCurrentUser(request);
+        
+        if(loggedInUser){
+            logger.info("Stats page loading!");
         const playlists = playlistStore.getAllPlaylists();
 
         let numPlaylists = playlists.length;
@@ -17,10 +21,13 @@ const stats = {
         let maxRating = Math.max(...mapped);
         let maxRated = playlists.filter(playlist => playlist.rating === maxRating);
         let favTitles = maxRated.map(item => item.title);
-        let mapped1 = playlists.map(playlist => playlist.amountOfSongs);
-        let maxRating2 = Math.max(...mapped1);
-        let maxAmountOfSongs = playlists.filter(playlist => playlist.amountOfSongs == maxRating2);
-        let numberOfSongs = maxAmountOfSongs.map(item => item.title);
+        //let mapped1 = playlists.map(playlist => playlist.amountOfSongs);
+        //let maxRating2 = Math.max(...mapped1);
+        //let maxAmountOfSongs = playlists.filter(playlist => playlist.amountOfSongs == maxRating2);
+        //let numberOfSongs = maxAmountOfSongs.map(item => item.title);
+        let longestSize = playlists.length > 0 ? Math.max(...playlists.map(playlist => playlist.songs.length)) : 0;
+        let longestPlaylists = playlists.filter(playlist => playlist.songs.length === longestSize);
+        let longestPlaylistTitles = longestPlaylists.map(item => item.title);
 
         const statistics = {
             displayNumPlaylists: numPlaylists,
@@ -29,15 +36,19 @@ const stats = {
             displayAvgRating: avgRating.toFixed(2),
             highest: maxRated,
             displayFav: favTitles,
-            displayAmountOfPlaylists: numberOfSongs
+            longest: longestSize,
+            longestTitles: longestPlaylistTitles
         }
 
         const viewData = {
             title: "Playlist App Statistics",
-            stats: statistics
+            stats: statistics,
+            fullname: loggedInUser.firstName+' '+ loggedInUser.lastName
         };
 
         response.render("stats", viewData);
+        }
+        else response.redirect('/');
     },
 
 
