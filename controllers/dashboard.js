@@ -71,8 +71,10 @@ const dashboard = {
             songs: [],
             rating: request.body.rating
         };
-        playlistStore.addPlaylist(newPlaylist);
-        response.redirect('/dashboard');
+        playlistStore.addPlaylist(newPlaylist, request.files.picture, function() {
+            response.redirect('/dashboard');
+        });
+        
     },
 
     deletePlaylist(request, response){

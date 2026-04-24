@@ -27,6 +27,27 @@
       "email": "mia222@gmail.com",
       "password": "catsanddosg",
       "id": "dbc61f74-39f5-44c9-a4df-a349cb4f8eb6"
+    },
+    {
+      "firstName": "John",
+      "lastName": "whier",
+      "email": "john@gmail.com",
+      "password": "hi there",
+      "id": "6612256f-437f-454c-8beb-db7c8c80bbb4"
+    },
+    {
+      "firstName": "john",
+      "lastName": "white",
+      "email": "john@gmail.com",
+      "password": "catlover",
+      "id": "6c12a0dd-cd8d-4782-94fd-93dc0043d93f"
+    },
+    {
+      "firstName": "john",
+      "lastName": "white",
+      "email": "john@gmail.com",
+      "password": "catlover",
+      "id": "c9f7d739-6a61-495f-a166-0e09523a1014"
     }
   ]
 }
