@@ -13,6 +13,7 @@ const about = {
             title: "This is the about page!",
             fullname: loggedInUser.firstName+' '+loggedInUser.lastName,
             employees: employees.getEmployeesInfo(),
+            picture: loggedInUser.picture
         };
 
         response.render('about', viewData);

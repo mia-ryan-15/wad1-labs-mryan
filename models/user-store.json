@@ -48,6 +48,39 @@
       "email": "john@gmail.com",
       "password": "catlover",
       "id": "c9f7d739-6a61-495f-a166-0e09523a1014"
+    },
+    {
+      "firstName": "m",
+      "lastName": "cat",
+      "email": "m@cat.com",
+      "password": "ilikecats",
+      "id": "adde1a2a-1720-4c75-80f4-fda2e678444f",
+      "picture": {
+        "url": "http://res.cloudinary.com/dtyp7yevp/image/upload/v1777038196/a80hlbytivzhwexjkhai.webp",
+        "public_id": "a80hlbytivzhwexjkhai"
+      }
+    },
+    {
+      "firstName": "mimi",
+      "lastName": "Gray",
+      "email": "mi123@gray.com",
+      "password": "hithere",
+      "id": "56d06b63-3bf7-48dd-8983-526e60680010",
+      "picture": {
+        "url": "http://res.cloudinary.com/dtyp7yevp/image/upload/v1777039286/hh6q02nweh0fwmze35gr.webp",
+        "public_id": "hh6q02nweh0fwmze35gr"
+      }
+    },
+    {
+      "firstName": "mimi",
+      "lastName": "wall",
+      "email": "mi563@wall.com",
+      "password": "hello",
+      "id": "e00c3463-1ef0-46a4-8a87-9c143cb1af84",
+      "picture": {
+        "url": "http://res.cloudinary.com/dtyp7yevp/image/upload/v1777039329/wd1xrxja5crzopaf7md1.webp",
+        "public_id": "wd1xrxja5crzopaf7md1"
+      }
     }
   ]
 }

@@ -48,7 +48,8 @@ const playlist = {
     const updatedSong = {
       id: songId,
       title: request.body.title,
-      artist: request.body.artist
+      artist: request.body.artist,
+      picture: loggedInUser.picture
     };
     playlistStore.editSong(playlistId, songId, updatedSong);
     response.redirect('/playlist/'+playlistId);

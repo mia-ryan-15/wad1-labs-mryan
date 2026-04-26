@@ -9,9 +9,11 @@ const stats = {
     createView(request, response){
         const loggedInUser = accounts.getCurrentUser(request);
         
+        
         if(loggedInUser){
             logger.info("Stats page loading!");
         const playlists = playlistStore.getAllPlaylists();
+        const numUsers = userStore.getAllUsers();
 
         let numPlaylists = playlists.length;
         let numSongs = playlists.reduce((total, playlist) => total + playlist.songs.length, 0);
@@ -29,7 +31,8 @@ const stats = {
         let longestSize = playlists.length > 0 ? Math.max(...playlists.map(playlist => playlist.songs.length)) : 0;
         let longestPlaylists = playlists.filter(playlist => playlist.songs.length === longestSize);
         let longestPlaylistTitles = longestPlaylists.map(item => item.title);
-        let numberOfUsers = users.length;
+
+        let numberOfUsers = numUsers.length;
 
         const statistics = {
             displayNumPlaylists: numPlaylists,
@@ -46,7 +49,8 @@ const stats = {
         const viewData = {
             title: "Playlist App Statistics",
             stats: statistics,
-            fullname: loggedInUser.firstName+' '+ loggedInUser.lastName
+            fullname: loggedInUser.firstName+' '+ loggedInUser.lastName,
+            picture: loggedInUser.picture
         };
 
         response.render("stats", viewData);

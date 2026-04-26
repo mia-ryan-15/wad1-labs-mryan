@@ -35,9 +35,11 @@ const accounts = {
     register(request, response){
         const user = request.body;
         user.id = uuidv4();
-        userStore.addUser(user);
+        userStore.addUser(user, request.files.picture, function() {
+            response.cookie('playlist', user.email);
+            response.redirect('/start');
+        });
         logger.info('registering' + user.email);
-        response.redirect('/');
     },
 
     authenticate(request, response){
