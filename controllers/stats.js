@@ -12,8 +12,8 @@ const stats = {
         
         if(loggedInUser){
             logger.info("Stats page loading!");
-        const playlists = playlistStore.getAllPlaylists();
-        const numUsers = userStore.getAllUsers();
+            const playlists = playlistStore.getAllPlaylists();
+            const numUsers = userStore.getAllUsers();
 
         let numPlaylists = playlists.length;
         let numSongs = playlists.reduce((total, playlist) => total + playlist.songs.length, 0);

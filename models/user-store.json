@@ -81,6 +81,28 @@
         "url": "http://res.cloudinary.com/dtyp7yevp/image/upload/v1777039329/wd1xrxja5crzopaf7md1.webp",
         "public_id": "wd1xrxja5crzopaf7md1"
       }
+    },
+    {
+      "firstName": "cats",
+      "lastName": "friend",
+      "email": "cat@gmail.com",
+      "password": "cathouse",
+      "id": "bc9fd767-b6e5-42d2-8436-db421164b9cd",
+      "picture": {
+        "url": "http://res.cloudinary.com/dtyp7yevp/image/upload/v1777367046/di5t7k0rod5l9hdtmima.jpg",
+        "public_id": "di5t7k0rod5l9hdtmima"
+      }
+    },
+    {
+      "firstName": "mia",
+      "lastName": "lily",
+      "email": "mia@lily.com",
+      "password": "catlover",
+      "id": "a4607ec5-979c-49bf-aff9-5c273b54f40a",
+      "picture": {
+        "url": "http://res.cloudinary.com/dtyp7yevp/image/upload/v1777468102/uk9e3w9fxc92p9puapgs.jpg",
+        "public_id": "uk9e3w9fxc92p9puapgs"
+      }
     }
   ]
 }
