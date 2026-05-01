@@ -44,7 +44,7 @@ const stats = {
             longest: longestSize,
             longestTitles: longestPlaylistTitles,
             amountOfUsers: numberOfUsers
-        }
+            }
 
         const viewData = {
             title: "Playlist App Statistics",
