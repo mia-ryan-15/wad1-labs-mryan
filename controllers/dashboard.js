@@ -14,16 +14,16 @@ const dashboard = {
         if(loggedInUser) {
             const searchTerm = request.query.searchTerm || "";
 
-        const playlists = searchTerm
-        ? playlistStore.searchUserPlaylists(searchTerm, loggedInUser.id)
-        : playlistStore.getUserPlaylists(loggedInUser.id);
+            const playlists = searchTerm
+            ? playlistStore.searchUserPlaylists(searchTerm, loggedInUser.id)
+            : playlistStore.getUserPlaylists(loggedInUser.id);
 
-        const sortField = request.query.sort;
-        const order = request.query.order === "desc" ? -1 : 1;
+            const sortField = request.query.sort;
+            const order = request.query.order === "desc" ? -1 : 1;
 
-        let sorted = playlists;
+            let sorted = playlists;
 
-        if(sortField){
+            if(sortField){
             sorted =playlists.slice().sort((a, b) => {
                 if(sortField === "title"){
                     return a.title.localeCompare(b.title * order);
